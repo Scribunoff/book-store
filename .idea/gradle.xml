@@ -12,7 +12,7 @@
             <option value="$PROJECT_DIR$/bill-service" />
             <option value="$PROJECT_DIR$/config-service" />
             <option value="$PROJECT_DIR$/deposit-service" />
-            <option value="$PROJECT_DIR$/discovery-service" />
+            <option value="$PROJECT_DIR$/discovery-server" />
             <option value="$PROJECT_DIR$/gateway" />
             <option value="$PROJECT_DIR$/notification-service" />
             <option value="$PROJECT_DIR$/user-service" />
