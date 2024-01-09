@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2ece370-0063-4bdf-b547-c20045e91479" name="Changes" comment="Define first step">
+    <list default="true" id="b2ece370-0063-4bdf-b547-c20045e91479" name="Changes" comment="First version of Business logic and infrastructure of microservices">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/controller/BillController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/controller/dto/BillRequestDTO.java" afterDir="false" />
@@ -316,7 +316,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704672722946</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First version of Business logic and infrastructure of microservices">
+      <option name="closed" value="true" />
+      <created>1704765044898</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704765044898</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,6 +342,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial design" />
     <MESSAGE value="Define first step" />
-    <option name="LAST_COMMIT_MESSAGE" value="Define first step" />
+    <MESSAGE value="First version of Business logic and infrastructure of microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="First version of Business logic and infrastructure of microservices" />
   </component>
 </project>
