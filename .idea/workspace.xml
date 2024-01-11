@@ -4,37 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2ece370-0063-4bdf-b547-c20045e91479" name="Changes" comment="First version of Business logic and infrastructure of microservices">
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/controller/DepositController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/controller/dto/DepositRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/controller/dto/DepositResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/entity/Deposit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/exception/DepositServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/repository/DepositRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/rest/AccountResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/rest/AccountServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/rest/BillRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/rest/BillResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/rest/BillServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/service/DepositService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/scribunoff/notificationservice/config/MailConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/scribunoff/notificationservice/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/scribunoff/notificationservice/service/DepositMessageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/scribunoff/notificationservice/service/DepositResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/mail-props.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="b2ece370-0063-4bdf-b547-c20045e91479" name="Changes" comment="add rabbitmq and deposit service">
+      <change afterPath="$PROJECT_DIR$/bill-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/controller/BillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/controller/BillController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/repository/BillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/repository/BillRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/service/BillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/service/BillService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/bill-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/bill-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/deposit-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/deposit-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/gateway.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/notification-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/notification-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deposit-service/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/DepositServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/DepositServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/scribunoff/notificationservice/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/scribunoff/notificationservice/NotificationServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/user-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/user-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deposit-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deposit-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +75,18 @@
         <task path="$PROJECT_DIR$/config-service">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/discovery-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/bill-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/notification-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -92,18 +97,11 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="book-sharing" type="f1a62948:ProjectNode" />
-                <item name="config-service" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="book-sharing" type="f1a62948:ProjectNode" />
-                <item name="config-service" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="book-sharing" type="f1a62948:ProjectNode" />
-                <item name="config-service" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
@@ -152,7 +150,10 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.book-sharing [build].executor": "Run",
     "Gradle.book-sharing:bill-service [:bill-service:BillServiceApplication.main()].executor": "Run",
+    "Gradle.book-sharing:bill-service [build].executor": "Run",
+    "Gradle.book-sharing:bill-service [clean].executor": "Run",
     "Gradle.book-sharing:config-service [:config-service:ConfigServiceApplication.main()].executor": "Run",
     "Gradle.book-sharing:config-service [build].executor": "Run",
     "Gradle.book-sharing:config-service [clean].executor": "Run",
@@ -160,9 +161,13 @@
     "Gradle.book-sharing:deposit-service [build].executor": "Run",
     "Gradle.book-sharing:deposit-service [clean].executor": "Run",
     "Gradle.book-sharing:discovery-server [:discovery-server:DiscoveryServerApplication.main()].executor": "Run",
+    "Gradle.book-sharing:discovery-server [build].executor": "Run",
+    "Gradle.book-sharing:discovery-server [clean].executor": "Run",
+    "Gradle.book-sharing:gateway [:gateway:GatewayApplication.main()].executor": "Run",
     "Gradle.book-sharing:gateway [build].executor": "Run",
     "Gradle.book-sharing:gateway [clean].executor": "Run",
     "Gradle.book-sharing:notification-service [:notification-service:NotificationServiceApplication.main()].executor": "Run",
+    "Gradle.book-sharing:notification-service [build].executor": "Run",
     "Gradle.book-sharing:user-service [:user-service:UserServiceApplication.main()].executor": "Run",
     "Gradle.book-sharing:user-service [build].executor": "Run",
     "Gradle.book-sharing:user-service [clean].executor": "Run",
@@ -176,95 +181,140 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/home/scribunoff/Documents/java_learning/spring/book-sharing/config-service/src/main/java/scribunoff",
-    "last_opened_file_path": "/home/scribunoff/Documents/java_learning/spring/book-sharing/bill-service/src/main/java/scribunoff/billservice",
+    "last_opened_file_path": "/home/scribunoff/Documents/java/pet-project/book-sharing/notification-service",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice" />
-      <recent name="$PROJECT_DIR$/user-service/src/main/java/scribunoff/userservice" />
-      <recent name="$PROJECT_DIR$/notification-service/src/main/resources" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/gateway/src/main/resources" />
+      <recent name="$PROJECT_DIR$/notification-service" />
+      <recent name="$PROJECT_DIR$/gateway" />
+      <recent name="$PROJECT_DIR$/deposit-service" />
+      <recent name="$PROJECT_DIR$/bill-service" />
+      <recent name="$PROJECT_DIR$/discovery-server" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NotificationServiceApplication">
-    <configuration name="BillServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="scribunoff.billservice.BillServiceApplication" />
-      <module name="book-sharing.bill-service.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scribunoff.billservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.book-sharing [build]">
+    <configuration name="book-sharing [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="ConfigServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="scribunoff.configservice.ConfigServiceApplication" />
-      <module name="book-sharing.config-service.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scribunoff.configservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="book-sharing:bill-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/bill-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="DepositServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="scribunoff.depositservice.DepositServiceApplication" />
-      <module name="book-sharing.deposit-service.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scribunoff.depositservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="book-sharing:bill-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/bill-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="scribunoff.notificationservice.NotificationServiceApplication" />
-      <module name="book-sharing.notification-service.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scribunoff.notificationservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="book-sharing:config-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/config-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="scribunoff.userservice.UserServiceApplication" />
-      <module name="book-sharing.user-service.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scribunoff.userservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="book-sharing:config-service [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/config-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DepositServiceApplication" />
-        <item itemvalue="Application.NotificationServiceApplication" />
-        <item itemvalue="Application.BillServiceApplication" />
-        <item itemvalue="Application.ConfigServiceApplication" />
-        <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Gradle.book-sharing [build]" />
+        <item itemvalue="Gradle.book-sharing:bill-service [build]" />
+        <item itemvalue="Gradle.book-sharing:bill-service [clean]" />
+        <item itemvalue="Gradle.book-sharing:config-service [build]" />
+        <item itemvalue="Gradle.book-sharing:config-service [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704765044898</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add rabbitmq and deposit service">
+      <option name="closed" value="true" />
+      <created>1704948784818</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704948784818</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,6 +385,7 @@
     <MESSAGE value="initial design" />
     <MESSAGE value="Define first step" />
     <MESSAGE value="First version of Business logic and infrastructure of microservices" />
-    <option name="LAST_COMMIT_MESSAGE" value="First version of Business logic and infrastructure of microservices" />
+    <MESSAGE value="add rabbitmq and deposit service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add rabbitmq and deposit service" />
   </component>
 </project>

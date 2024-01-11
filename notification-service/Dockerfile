@@ -1,0 +1,4 @@
+FROM amazoncorretto:17
+EXPOSE 9999
+COPY build/libs/notification-service-0.0.1-SNAPSHOT.jar .
+ENTRYPOINT ["java", "-jar", "notification-service-0.0.1-SNAPSHOT.jar"]

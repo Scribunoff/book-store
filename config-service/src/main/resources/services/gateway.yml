@@ -10,24 +10,52 @@ ribbon:
   ReadTimeout: 20000
   ConnectTimeout: 20000
 
+cloud:
+  user-url: http://172.17.0.1:8081
+  bill-url: http://172.17.0.1:8082
+  deposit-url: http://172.17.0.1:8080
+
 spring:
   cloud:
     gateway:
+#      default-filters:
+#        - TokenRelay
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
       routes:
-        user-service:
-          path: /users/**
-          serviceId: user-service
-          stripPrefix: false
+        - id: user-service
+          uri: ${cloud.user-url}
+          predicates:
+            - Path=/users/**
 
-        bill-service:
-          path: /bills/**
-          serviceId: bill-service
-          stripPrefix: false
+        - id: bill-service
+          uri: ${cloud.bill-url}
+          predicates:
+            - Path=/bills/**
 
-        deposit-service:
-          path: /deposits/**
-          serviceId: deposit-service
-          stripPrefix: false
+        - id: deposit-service
+          uri: ${cloud.deposit-url}
+          predicates:
+            - Path=/deposits/**
+
+
+
+#        user-service:
+#          path: /users/**
+#          serviceId: user-service
+#          stripPrefix: false
+#
+#        bill-service:
+#          path: /bills/**
+#          serviceId: bill-service
+#          stripPrefix: false
+#
+#        deposit-service:
+#          path: /deposits/**
+#          serviceId: deposit-service
+#          stripPrefix: false
 
 server:
   port: 8989
