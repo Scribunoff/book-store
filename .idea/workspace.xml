@@ -5,47 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2ece370-0063-4bdf-b547-c20045e91479" name="Changes" comment="First version of Business logic and infrastructure of microservices">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/controller/BillController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/controller/dto/BillRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/controller/dto/BillResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/entity/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/exception/BillNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/repository/BillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/service/BillService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/scribunoff/userservice/controller/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/scribunoff/userservice/controller/dto/AccountRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/scribunoff/userservice/controller/dto/AccountResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/scribunoff/userservice/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/scribunoff/userservice/exception/AccountNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/scribunoff/userservice/repository/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/scribunoff/userservice/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/controller/DepositController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/controller/dto/DepositRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/controller/dto/DepositResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/entity/Deposit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/exception/DepositServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/repository/DepositRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/rest/AccountResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/rest/AccountServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/rest/BillRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/rest/BillResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/rest/BillServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/service/DepositService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/scribunoff/notificationservice/config/MailConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/scribunoff/notificationservice/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/scribunoff/notificationservice/service/DepositMessageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/scribunoff/notificationservice/service/DepositResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/mail-props.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bill-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bill-service/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/BillServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/BillServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/java/scribunoff/configservice/ConfigServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/java/scribunoff/configservice/ConfigServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/bill-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/bill-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/controller/BillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/controller/BillController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/repository/BillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/repository/BillRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/service/BillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice/service/BillService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/deposit-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/deposit-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/gateway.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/user-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/user-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/java/scribunoff/discoveryserver/DiscoveryServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/java/scribunoff/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/scribunoff/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/scribunoff/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/scribunoff/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/scribunoff/userservice/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/notification-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/notification-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deposit-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/DepositServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/deposit-service/src/main/java/scribunoff/depositservice/DepositServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/scribunoff/notificationservice/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/scribunoff/notificationservice/NotificationServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,34 +148,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.book-sharing:bill-service [:bill-service:BillServiceApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.book-sharing:config-service [:config-service:ConfigServiceApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.book-sharing:config-service [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.book-sharing:config-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.book-sharing:deposit-service [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.book-sharing:deposit-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.book-sharing:discovery-server [:discovery-server:DiscoveryServerApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.book-sharing:gateway [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.book-sharing:gateway [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.book-sharing:user-service [:user-service:UserServiceApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.book-sharing:user-service [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.book-sharing:user-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.user-service [dependencies].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/home/scribunoff/Documents/java_learning/spring/book-sharing/config-service/src/main/java/scribunoff&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/scribunoff/Documents/java_learning/spring/book-sharing/bill-service/src/main/java/scribunoff/billservice&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.book-sharing:bill-service [:bill-service:BillServiceApplication.main()].executor": "Run",
+    "Gradle.book-sharing:config-service [:config-service:ConfigServiceApplication.main()].executor": "Run",
+    "Gradle.book-sharing:config-service [build].executor": "Run",
+    "Gradle.book-sharing:config-service [clean].executor": "Run",
+    "Gradle.book-sharing:deposit-service [:deposit-service:DepositServiceApplication.main()].executor": "Run",
+    "Gradle.book-sharing:deposit-service [build].executor": "Run",
+    "Gradle.book-sharing:deposit-service [clean].executor": "Run",
+    "Gradle.book-sharing:discovery-server [:discovery-server:DiscoveryServerApplication.main()].executor": "Run",
+    "Gradle.book-sharing:gateway [build].executor": "Run",
+    "Gradle.book-sharing:gateway [clean].executor": "Run",
+    "Gradle.book-sharing:notification-service [:notification-service:NotificationServiceApplication.main()].executor": "Run",
+    "Gradle.book-sharing:user-service [:user-service:UserServiceApplication.main()].executor": "Run",
+    "Gradle.book-sharing:user-service [build].executor": "Run",
+    "Gradle.book-sharing:user-service [clean].executor": "Run",
+    "Gradle.user-service [dependencies].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/home/scribunoff/Documents/java_learning/spring/book-sharing/config-service/src/main/java/scribunoff",
+    "last_opened_file_path": "/home/scribunoff/Documents/java_learning/spring/book-sharing/bill-service/src/main/java/scribunoff/billservice",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/bill-service/src/main/java/scribunoff/billservice" />
@@ -199,7 +192,7 @@
       <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BillServiceApplication">
+  <component name="RunManager" selected="Application.NotificationServiceApplication">
     <configuration name="BillServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="scribunoff.billservice.BillServiceApplication" />
       <module name="book-sharing.bill-service.main" />
@@ -226,12 +219,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscoveryServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="scribunoff.discoveryserver.DiscoveryServerApplication" />
-      <module name="book-sharing.discovery-server.main" />
+    <configuration name="DepositServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="scribunoff.depositservice.DepositServiceApplication" />
+      <module name="book-sharing.deposit-service.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scribunoff.discoveryserver.*" />
+          <option name="PATTERN" value="scribunoff.depositservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="scribunoff.notificationservice.NotificationServiceApplication" />
+      <module name="book-sharing.notification-service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scribunoff.notificationservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -252,35 +258,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="book-sharing:config-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/config-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DepositServiceApplication" />
+        <item itemvalue="Application.NotificationServiceApplication" />
         <item itemvalue="Application.BillServiceApplication" />
         <item itemvalue="Application.ConfigServiceApplication" />
         <item itemvalue="Application.UserServiceApplication" />
-        <item itemvalue="Application.DiscoveryServerApplication" />
-        <item itemvalue="Gradle.book-sharing:config-service [build]" />
       </list>
     </recent_temporary>
   </component>

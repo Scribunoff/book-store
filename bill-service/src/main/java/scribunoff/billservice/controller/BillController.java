@@ -7,6 +7,9 @@ import scribunoff.billservice.controller.dto.BillRequestDTO;
 import scribunoff.billservice.controller.dto.BillResponseDTO;
 import scribunoff.billservice.service.BillService;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @RestController
 public class BillController {
 
@@ -38,5 +41,12 @@ public class BillController {
     @DeleteMapping("/{billId}")
     public BillResponseDTO deleteBill(@PathVariable Long billId) {
         return new BillResponseDTO(billService.deleteBill(billId));
+    }
+    
+    @GetMapping("/account/{accountId}")
+    public List<BillResponseDTO> getBillsByAccountId(@PathVariable Long accountId) {
+        return billService.getBillsByAccountId(accountId).stream()
+                .map(BillResponseDTO::new)
+                .collect(Collectors.toList());
     }
 }
