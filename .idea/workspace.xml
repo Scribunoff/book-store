@@ -4,32 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2ece370-0063-4bdf-b547-c20045e91479" name="Changes" comment="added gateway and dockerfiles">
-      <change afterPath="$PROJECT_DIR$/bill-service/wait-for.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/wait-for.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/wait-for.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/wait-for.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/wait-for.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/wait-for.sh" afterDir="false" />
+    <list default="true" id="b2ece370-0063-4bdf-b547-c20045e91479" name="Changes" comment="added docker-compose">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bill-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bill-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/bill-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/bill-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/deposit-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/deposit-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/gateway.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/notification-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/notification-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deposit-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/deposit-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deposit-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deposit-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/user-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/user-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,48 +128,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Docker.docker-compose.yml.config-service: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.book-sharing [build].executor": "Run",
-    "Gradle.book-sharing [clean].executor": "Run",
-    "Gradle.book-sharing:bill-service [:bill-service:BillServiceApplication.main()].executor": "Run",
-    "Gradle.book-sharing:bill-service [build].executor": "Run",
-    "Gradle.book-sharing:bill-service [clean].executor": "Run",
-    "Gradle.book-sharing:config-service [:config-service:ConfigServiceApplication.main()].executor": "Run",
-    "Gradle.book-sharing:config-service [build].executor": "Run",
-    "Gradle.book-sharing:config-service [clean].executor": "Run",
-    "Gradle.book-sharing:deposit-service [:deposit-service:DepositServiceApplication.main()].executor": "Run",
-    "Gradle.book-sharing:deposit-service [build].executor": "Run",
-    "Gradle.book-sharing:deposit-service [clean].executor": "Run",
-    "Gradle.book-sharing:discovery-server [:discovery-server:DiscoveryServerApplication.main()].executor": "Run",
-    "Gradle.book-sharing:discovery-server [build].executor": "Run",
-    "Gradle.book-sharing:discovery-server [clean].executor": "Run",
-    "Gradle.book-sharing:gateway [:gateway:GatewayApplication.main()].executor": "Run",
-    "Gradle.book-sharing:gateway [build].executor": "Run",
-    "Gradle.book-sharing:gateway [clean].executor": "Run",
-    "Gradle.book-sharing:notification-service [:notification-service:NotificationServiceApplication.main()].executor": "Run",
-    "Gradle.book-sharing:notification-service [build].executor": "Run",
-    "Gradle.book-sharing:user-service [:user-service:UserServiceApplication.main()].executor": "Run",
-    "Gradle.book-sharing:user-service [build].executor": "Run",
-    "Gradle.book-sharing:user-service [clean].executor": "Run",
-    "Gradle.user-service [dependencies].executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/home/scribunoff/Documents/java_learning/spring/book-sharing/config-service/src/main/java/scribunoff",
-    "last_opened_file_path": "/home/scribunoff/Documents/java/pet-project/book-sharing/user-service",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.docker-compose.yml.config-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.book-sharing [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:bill-service [:bill-service:BillServiceApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:bill-service [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:bill-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:config-service [:config-service:ConfigServiceApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:config-service [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:config-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:deposit-service [:deposit-service:DepositServiceApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:deposit-service [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:deposit-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:discovery-server [:discovery-server:DiscoveryServerApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:discovery-server [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:discovery-server [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:gateway [:gateway:GatewayApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:gateway [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:gateway [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:notification-service [:notification-service:NotificationServiceApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:notification-service [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:user-service [:user-service:UserServiceApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:user-service [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.book-sharing:user-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/scribunoff/Documents/java_learning/spring/book-sharing/config-service/src/main/java/scribunoff&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/scribunoff/Documents/java/pet-project/book-sharing/user-service&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/user-service" />
@@ -262,11 +242,15 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -356,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705016666443</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added docker-compose">
+      <option name="closed" value="true" />
+      <created>1705032617193</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705032617193</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,6 +369,7 @@
     <MESSAGE value="First version of Business logic and infrastructure of microservices" />
     <MESSAGE value="add rabbitmq and deposit service" />
     <MESSAGE value="added gateway and dockerfiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added gateway and dockerfiles" />
+    <MESSAGE value="added docker-compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="added docker-compose" />
   </component>
 </project>
