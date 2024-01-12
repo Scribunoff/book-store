@@ -11,9 +11,9 @@ ribbon:
   ConnectTimeout: 20000
 
 cloud:
-  user-url: http://172.17.0.1:8081
-  bill-url: http://172.17.0.1:8082
-  deposit-url: http://172.17.0.1:8080
+  user-url: http://user-service:8081
+  bill-url: http://bill-service:8082
+  deposit-url: http://deposit-service:8080
 
 spring:
   cloud:
