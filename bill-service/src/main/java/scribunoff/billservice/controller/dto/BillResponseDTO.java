@@ -24,7 +24,7 @@ public class BillResponseDTO {
     private Boolean overdraftEnabled;
 
     public BillResponseDTO(Bill bill) {
-        billId = bill.getBillId();
+        billId = bill.getId();
         accountId = bill.getAccountId();
         amount = bill.getAmount();
         isDefault = bill.getIsDefault();

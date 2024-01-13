@@ -18,8 +18,8 @@ import java.util.List;
 public class Account {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long accountId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String name;
 
@@ -31,6 +31,7 @@ public class Account {
 
     @ElementCollection
     private List<Long> bills;
+
 
     public Account(String name, String email, String phone,
                    OffsetDateTime creationDate, List<Long> bills) {

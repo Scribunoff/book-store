@@ -28,13 +28,13 @@ public class BillService {
 
     public Long createBill(Long accountId, BigDecimal amount, Boolean isDefault, Boolean overdraftEnabled) {
         Bill bill = new Bill(accountId, amount, isDefault, OffsetDateTime.now(), overdraftEnabled);
-        return billRepository.save(bill).getBillId();
+        return billRepository.save(bill).getId();
     }
 
     public Bill updateBill(Long billId, Long accountId, BigDecimal amount,
                            Boolean isDefault, Boolean overdraftEnabled) {
         Bill bill = new Bill(accountId, amount, isDefault, overdraftEnabled);
-        bill.setBillId(billId);
+        bill.setId(billId);
         return billRepository.save(bill);
     }
 

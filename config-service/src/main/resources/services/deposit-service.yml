@@ -1,14 +1,18 @@
 spring:
   jpa:
     database: POSTGRESQL
-    properties.hibernate.temp.use_jdbc_metadata_defaults: false
+    properties.hibernate:
+      batch_size: 50
+      fetch_size: 50
+      show_sql: true
+      format_sql: true
+      hbm2ddl.auto: create
     hibernate:
       ddl-auto: create
-    properties:
 
   datasource:
     platform: postgres
-    url: jdbc:postgresql://db:5433/${POSTGRES_DEPOSIT_DB}?createDatabaseIfNotExist=true
+    url: jdbc:postgresql://db:5432/${POSTGRES_DB}?createDatabaseIfNotExist=true
     username: ${POSTGRES_USER}
     password: ${POSTGRES_PASSWORD}
     driver-class-name: org.postgresql.Driver

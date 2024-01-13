@@ -25,7 +25,7 @@ public class AccountResponseDTO {
     private OffsetDateTime creationDate;
 
     public AccountResponseDTO(Account account) {
-        accountId = account.getAccountId();
+        accountId = account.getId();
         name = account.getName();
         email = account.getEmail();
         phone = account.getPhone();
